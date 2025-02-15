@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manoj Kumar - Software Engineer Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+@keyframes slideIn {
+from { transform: translateY(20px); opacity: 0; }
+to { transform: translateY(0); opacity: 1; }
+}
+.animate-fade { animation: fadeIn 1s ease-out; }
+.animate-slide { animation: slideIn 1s ease-out; }
+.gradient-text {
+background: linear-gradient(45deg, #89253e, #3a6186);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.gradient-bg {
+background: linear-gradient(45deg, #89253e, #3a6186);
+}
+</style>
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#89253e',
+secondary: '#3a6186'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+</head>
+<body class="bg-white">
+<div id="welcome-screen" class="fixed inset-0 z-50 flex items-center justify-center gradient-bg">
+<div class="text-center text-white">
+<h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade">Welcome to My Portfolio</h1>
+<p class="text-xl md:text-2xl animate-slide">Software Engineer & Analyst</p>
+</div>
+</div>
+<header class="fixed top-0 w-full z-40 bg-white/90 backdrop-blur-sm border-b">
+<nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+<a href="#" class="text-2xl font-['Pacifico'] gradient-text">MK</a>
+<div class="hidden md:flex space-x-8">
+<a href="#about" class="hover:text-primary transition-colors">About</a>
+<a href="#skills" class="hover:text-primary transition-colors">Skills</a>
+<a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+<a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+<a href="#education" class="hover:text-primary transition-colors">Education</a>
+</div>
+<button id="mobile-menu-button" class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</nav>
+<div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-b">
+<div class="container mx-auto px-4 py-4 space-y-4">
+<a href="#about" class="block hover:text-primary transition-colors">About</a>
+<a href="#skills" class="block hover:text-primary transition-colors">Skills</a>
+<a href="#projects" class="block hover:text-primary transition-colors">Projects</a>
+<a href="#experience" class="block hover:text-primary transition-colors">Experience</a>
+<a href="#education" class="block hover:text-primary transition-colors">Education</a>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<section id="about" class="min-h-screen flex items-center relative overflow-hidden">
+<div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2">
+<img src="C:\Users\X026062\Downloads\Media (2).jpg"
+alt="Manoj Kumar"
+class="rounded-full w-64 h-64 md:w-96 md:h-96 object-cover mx-auto shadow-xl">
+</div>
+<div class="md:w-1/2 text-center md:text-left">
+<h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Hi, I'm Manoj Kumar</h1>
+<h2 class="text-xl md:text-2xl mb-6 text-gray-600">Analyst at HCLTech</h2>
+<p class="text-gray-700 mb-8 max-w-lg">
+Passionate software engineer with expertise in full-stack development.
+Currently working on enterprise solutions at HCLTech, focusing on creating
+efficient and scalable applications.
+</p>
+<button class="gradient-bg text-white px-8 py-3 rounded-button hover:opacity-90 transition-opacity">
+Let's Connect
+</button>
+</div>
+</div>
+</section>
+<section id="skills" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Technical Skills</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-bold mb-4 text-primary">Frontend Development</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<i class="ri-html5-line text-2xl"></i>
+<span>HTML5</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-css3-line text-2xl"></i>
+<span>CSS3</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-javascript-line text-2xl"></i>
+<span>JavaScript</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-bold mb-4 text-primary">Backend Development</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<i class="ri-code-s-slash-line text-2xl"></i>
+<span>Java</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-database-2-line text-2xl"></i>
+<span>SQL</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-nodejs-line text-2xl"></i>
+<span>Node.js</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<h3 class="text-xl font-bold mb-4 text-primary">Tools & Technologies</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<i class="ri-git-branch-line text-2xl"></i>
+<span>Git</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-github-line text-2xl"></i>
+<span>GitHub</span>
+</div>
+<div class="flex items-center gap-2">
+<i class="ri-terminal-box-line text-2xl"></i>
+<span>Command Line</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-20">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Featured Projects</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/a9718ff3766aad502e4eb153374afa65.jpg"
+alt="Hospital Management System"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Hospital Management System</h3>
+<p class="text-gray-600 mb-4">A comprehensive solution for managing hospital operations, patient records, and appointments.</p>
+<div class="flex gap-4">
+<a href="#" class="text-primary hover:underline">View Code</a>
+<a href="#" class="text-primary hover:underline">Live Demo</a>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/b321c03c44565de35f28de20f7e65cda.jpg"
+alt="E-commerce Website"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
+<p class="text-gray-600 mb-4">A full-featured online shopping platform with product management and secure payment integration.</p>
+<div class="flex gap-4">
+<a href="#" class="text-primary hover:underline">View Code</a>
+<a href="#" class="text-primary hover:underline">Live Demo</a>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/117d81ed44b28aaf982c4b1338dee585.jpg"
+alt="Portfolio Website"
+class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+<p class="text-gray-600 mb-4">A personal portfolio website showcasing projects and professional experience.</p>
+<div class="flex gap-4">
+<a href="#" class="text-primary hover:underline">View Code</a>
+<a href="#" class="text-primary hover:underline">Live Demo</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Work Experience</h2>
+<div class="max-w-3xl mx-auto">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary">Analyst</h3>
+<p class="text-gray-600">HCLTech</p>
+</div>
+<p class="text-gray-500">Dec 2023 - Present</p>
+</div>
+<ul class="list-disc list-inside text-gray-700 space-y-2">
+<li>Developing and maintaining enterprise-level applications</li>
+<li>Collaborating with cross-functional teams for project delivery</li>
+<li>Implementing best practices and coding standards</li>
+<li>Participating in code reviews and technical discussions</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="education" class="py-20">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Education</h2>
+<div class="max-w-3xl mx-auto space-y-8">
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary">Bachelor of Computer Application</h3>
+<p class="text-gray-600">Bengaluru City University</p>
+</div>
+<p class="text-gray-500">2020 - 2023</p>
+</div>
+<p class="text-gray-700">Specialized in computer applications and software development</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-lg">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-xl font-bold text-primary">High School (Science Stream)</h3>
+<p class="text-gray-600">DR Adarsh Public SR SEC School, Jodhpur</p>
+</div>
+<p class="text-gray-500">2018 - 2020</p>
+</div>
+<p class="text-gray-700">Focused on Physics, Chemistry, and Mathematics</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="gradient-bg text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Contact</h3>
+<div class="space-y-2">
+<p class="flex items-center gap-2">
+<i class="ri-mail-line"></i>
+<a href="mailto:manojkumar911172@gmail.com">manojkumar911172@gmail.com</a>
+</p>
+<p class="flex items-center gap-2">
+<i class="ri-phone-line"></i>
+<a href="tel:+917676154124">+91 7676154124</a>
+</p>
+<p class="flex items-center gap-2">
+<i class="ri-map-pin-line"></i>
+Bengaluru, India
+</p>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Connect</h3>
+<div class="flex space-x-4">
+<a href="https://github.com/Manojbhati23" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-80">
+<i class="ri-github-fill text-2xl"></i>
+</a>
+<a href="https://www.linkedin.com/in/manoj-kumar-593436241/" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-80">
+<i class="ri-linkedin-fill text-2xl"></i>
+</a>
+<a href="https://wa.me/917676154124" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-80">
+<i class="ri-whatsapp-fill text-2xl"></i>
+</a>
+<a href="https://www.facebook.com/share/18ne2jqGsB/" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-80">
+<i class="ri-facebook-fill text-2xl"></i>
+</a>
+<a href="https://www.instagram.com/d_imm9j23?igsh=MTBydno0Z3o5Njh6Yg==" target="_blank" class="w-10 h-10 flex items-center justify-center hover:opacity-80">
+<i class="ri-instagram-fill text-2xl"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-4">Quick Links</h3>
+<div class="space-y-2">
+<a href="#about" class="block hover:opacity-80">About</a>
+<a href="#skills" class="block hover:opacity-80">Skills</a>
+<a href="#projects" class="block hover:opacity-80">Projects</a>
+<a href="#experience" class="block hover:opacity-80">Experience</a>
+<a href="#education" class="block hover:opacity-80">Education</a>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-white/20 text-center">
+<p>&copy; 2025 Manoj Kumar. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+setTimeout(() => {
+document.getElementById('welcome-screen').style.opacity = 0;
+document.getElementById('welcome-screen').style.transition = 'opacity 1s ease-out';
+setTimeout(() => {
+document.getElementById('welcome-screen').style.display = 'none';
+}, 1000);
+}, 2000);
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+mobileMenuButton.addEventListener('click', () => {
+mobileMenu.classList.toggle('hidden');
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+const target = document.querySelector(this.getAttribute('href'));
+if (target) {
+window.scrollTo({
+top: target.offsetTop - 80,
+behavior: 'smooth'
+});
+mobileMenu.classList.add('hidden');
+}
+});
+});
+});
+</script>
+</body>
+</html>
